@@ -1,0 +1,308 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.git基本使用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapters2.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    项目前期准备
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="chapters1.html">
+            
+                <a href="chapters1.html">
+            
+                    
+                    1.git基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="chapters2.html">
+            
+                <a href="chapters2.html">
+            
+                    
+                    2.远程私有库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >1.git基本使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <ol>
+<li>&#x5728; gitHub&#x4E0A;&#x521B;&#x5EFA;&#x8FDC;&#x7A0B;&#x516C;&#x5F00;&#x4ED3;&#x5E93;
+2.&#x5728;&#x672C;&#x5730;&#x521B;&#x5EFA;&#x8981;&#x4E0A;&#x4F20;&#x7684;&#x6587;&#x4EF6;</li>
+<li>&#x7ED9;&#x672C;&#x5730;&#x6587;&#x4EF6; &#x6DFB;&#x52A0;git &#x7BA1;&#x7406;, &#x5E76;&#x63D0;&#x4EA4;&#x5230;&#x672C;&#x5730;&#x4EE3;&#x7801;&#x4ED3;&#x5E93;
+ <img src="." alt="&#x672C;&#x5730;&#x4EE3;&#x7801;&#x4ED3;&#x5E93;.png">(<a href="http://upload-images.jianshu.io/upload_images/851071-8e397626187c906b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank">http://upload-images.jianshu.io/upload_images/851071-8e397626187c906b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240</a>)</li>
+</ol>
+<pre><code>cd /Users/xxx/Desktop/FM
+git init  (&#x6DFB;&#x52A0; git &#x7BA1;&#x7406; )
+git status (&#x7EA2;&#x8272;&#x4EE3;&#x8868; &#x5DE5;&#x4F5C;&#x533A; &#x672A;&#x63D0;&#x4EA4;&#x7684;&#x4EE3;&#x7801;)
+git add . (&#x63D0;&#x4EA4;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6; , &#x628A;&#x5DE5;&#x4F5C;&#x533A;&#x7684;&#x4EE3;&#x7801;, &#x653E;&#x5728;&#x6682;&#x7F13;&#x533A;)
+git status  (&#x7EFF;&#x8272;&#x4EE3;&#x7801; &#x5728;&#x6682;&#x7F13;&#x533A; &#x4EE3;&#x7801;&#x672A;&#x63D0;&#x4EA4;)
+git commit -m &quot;xxx&quot; (&#x63D0;&#x4EA4;&#x5230;&#x4EE3;&#x7801;&#x4ED3;&#x5E93;(&#x672C;&#x5730;)-m &#x662F;&#x52A0;&#x6CE8;&#x91CA; )
+</code></pre><p>4.&#x63D0;&#x4EA4;&#x5230;&#x8FDC;&#x7A0B;&#x4EE3;&#x7801;&#x4ED3;&#x5E93;</p>
+<p>git remote (&#x67E5;&#x770B;&#x8FDC;&#x7A0B;&#x4EE3;&#x7801;&#x4ED3;&#x5E93;&#x7684;&#x5730;&#x5740;)
+git remote add origin <a href="https://github.com/XXX/testFM.git" target="_blank">https://github.com/XXX/testFM.git</a> (origin &#x8FDC;&#x7A0B;)  (https &#x9700;&#x8981; &#x8D26;&#x53F7;&#x5BC6;&#x7801;, SSH &#x9700;&#x8981; &#x516C;&#x94A5;&#x548C;&#x79C1;&#x94A5;)
+git push origin master</p>
+<ol>
+<li>&#x6DFB;&#x52A0;&#x6807;&#x7B7E;</li>
+</ol>
+<pre><code>git tag (&#x67E5;&#x770B;&#x5F53;&#x524D;&#x7684;&#x6240;&#x6709;&#x6807;&#x7B7E;)
+git tag -a &apos;0.01&apos; -m &apos;&#x6253;&#x6807;&#x7B7E;&apos;
+git push --tags(&#x63D0;&#x4EA4;&#x672C;&#x5730;&#x7684;&#x6240;&#x6709;&#x6807;&#x7B7E;)
+</code></pre><ol>
+<li>&#x4EE3;&#x7801;&#x66F4;&#x6539;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;</li>
+</ol>
+<pre><code>git status
+git add .
+git commit -m &apos;xxx&apos;
+git log (&#x67E5;&#x770B;&#x5F53;&#x524D;&#x7684;&#x7248;&#x672C;&#x53F7;)
+git tag -a &apos;0.02&apos; -m &apos;&#x7B2C;&#x4E8C;&#x4E2A;&#x6807;&#x7B7E;&apos;
+git push origin 0.02
+</code></pre><ol>
+<li>&#x5220;&#x9664;&#x67D0;&#x4E2A;&#x6807;&#x7B7E;</li>
+</ol>
+<pre><code>git tag -d 0.0.1   (&#x5220;&#x9664;&#x7684;&#x662F;&#x672C;&#x5730;&#x7684;)
+git push origin :0.0.1 (&#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x7684;&#x6807;&#x7B7E;, : &#x8868;&#x793A;&#x5220;&#x9664;)
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="chapters2.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 2.远程私有库">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.git基本使用","level":"1.2.1","depth":2,"next":{"title":"2.远程私有库","level":"1.2.2","depth":2,"path":"chapters2.md","ref":"chapters2.md","articles":[]},"previous":{"title":"项目前期准备","level":"1.2","depth":1,"ref":"","articles":[{"title":"1.git基本使用","level":"1.2.1","depth":2,"path":"chapters1.md","ref":"chapters1.md","articles":[]},{"title":"2.远程私有库","level":"1.2.2","depth":2,"path":"chapters2.md","ref":"chapters2.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters1.md","mtime":"2017-12-13T09:01:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-20T03:50:15.484Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
